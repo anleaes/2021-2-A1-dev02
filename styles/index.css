@@ -1,5 +1,14 @@
-:root {
-  --main_color: #;
+.main-c {
+  position: relative;
+  background-color: #ae2f3f;
+  padding: 2rem;
+  width: 40rem;
+  border-radius: 300px 300px;  
+}
+
+.col-sem-margem{
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* MAIN CODE  */
