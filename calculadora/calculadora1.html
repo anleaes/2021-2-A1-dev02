@@ -5,34 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="sortcut icon" type="image/png" href="../aula_5/img/calculadora.png" />
-    <link rel="stylesheet" type="text/css" href="../aula_5/css/estilo_calculadora.css">
-    
-        <style type="text/css">
-        div{
-            padding: 20px;
-        }
-        table{
-           background-color: #777777;
-           padding: 2px;
-        }
-        .botoes{
-            background-color: #ecd469;
-            width: 47px;
-            height: 47px;
-            font-size: 15px;
-            border: 1;
-            font-weight: bold;
-        }
-        .tela{ 
-            width: 200px;
-            height: 47px;
-            background-color: #000000;
-            color: #ffffff;
-            border: 1;
-            font-size: 25px;
-            font-size: bold;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./style/calculadora.css">
 
     <title>Minha primeira calculadora</title>
 </head>
@@ -78,26 +51,7 @@
         <div>
             <img src="../aula_5/img/calculadora.png" alt="Minha imagem deveria estar aqui.">
         </div>
-    <script type="text/javascript" src="../aula_5/js/funcionalidades_calculadora.js"></script>
-    
-        <script type="text/javascript">
-        function limpar(){
-            document.meu_form.minha_tela.value = "";
-        }
-        function inserir(meu_numero){
-            document.meu_form.minha_tela.value = document.meu_form.minha_tela.value + meu_numero;  
-        } 
-        function deletar(){
-            var meu_conteudo = document.meu_form.minha_tela.value;
-            document.meu_form.minha_tela.value = meu_conteudo.substring(0 , meu_conteudo.length-1);
-        }
-        function total(){
-            var meu_resultado = document.meu_form.minha_tela.value;
-            if(meu_resultado){
-                document.meu_form.minha_tela.value = eval(meu_resultado);
-            }
-        }
-    </script>
+        <script src="./src/calculadora.js"></script>
 
 </body>
 </html>
