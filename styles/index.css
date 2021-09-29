@@ -12,7 +12,7 @@
 .color-background{
   padding: 2rem;
   background-color: #ae2f3f;
-  border-radius: 15px 30px; 
+  border-radius: 30px; 
   position: relative;
 }
 .col-sem-margem{
@@ -20,19 +20,19 @@
   padding-right: 5px;
 }
 .imagem-home{
-  height: 200px;
-  width: 200px;
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
   overflow: hidden;
   position: absolute;
-  margin-top: -7rem;
+  margin-top: -6rem;
 }
 .imagem-home img{
-  height: 200px;
+  height: 10rem;
 }
 .background-bottons{
   background-color: #464a4b;
-  border-radius: 200px 200px; 
+  border-radius: 30px; 
   height: 100px;
   width: 250px; 
   margin-top: 3rem;
