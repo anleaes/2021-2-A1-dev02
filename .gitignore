@@ -1,1 +1,2 @@
-workspaceapp/workspaceapp/__pycache__/*
+backend/workspaceapp/__pycache__/*
+backend/.env
