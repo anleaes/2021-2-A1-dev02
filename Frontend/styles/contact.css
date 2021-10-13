@@ -1,3 +1,8 @@
+nav ul li {
+  list-style: none;
+  display: inline-flex;
+  margin-right: 1rem  ;
+}
 .main-cover {
   position: relative;
   background-color: #ae2f3f;
