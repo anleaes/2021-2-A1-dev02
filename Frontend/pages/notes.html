@@ -18,10 +18,12 @@
       <div>
         <h3 class="float-md-start mb-0">2021-2-A1-DEV02</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a class="nav-link " href="../index.html">Home</a>
-          <a class="nav-link" href="./about.html">Sobre</a>
-          <a class="nav-link" href="./contact.html">Contatos</a>
-          <a class="nav-link active" aria-current="page">Notas</a>
+          <ul>
+            <li> <a class="nav-link " href="../index.html">Home</a></li>
+            <li><a class="nav-link" href="./about.html">Sobre</a></li>
+            <li><a class="nav-link" href="./contact.html">Contatos</a></li>
+            <li><a class="nav-link active" aria-current="page">Notas</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -35,32 +37,32 @@
           <h2>Notas</h2>
         </header>
         <div class="pre-table text-center">
-            <table>
-                <tr>
-                    <td> </td>
-                    <td class="table-name"><b>Lucas</b> </td>
-                    <td class="table-name"><b>Luis</b> </td>
-                </tr> 
-                <tr>
-                    <td id="n1">N1</td>
-                    <td id="n1-lucas"> </td>
-                    <td id="n1-luis"> </td>
-                </tr> 
-                <tr>
-                    <td id="n1">N2</td>
-                    <td id="n2-lucas"> </td>
-                    <td id="n2-luis"> </td>
-                </tr> 
-                <tr>
-                    <td id="media">Média</td>
-                    <td id="media-lucas"> </td>
-                    <td id="media-luis"> </td>
-                </tr> 
-            </table>
+          <table id="tabela-notas">
+            <tr>
+              <td> </td>
+              <td class="table-name"><b>Lucas</b> </td>
+              <td class="table-name"><b>Luis</b> </td>
+            </tr>
+            <tr>
+              <td><b>N1</b></td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>N2</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Média</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+          </table>
         </div>
-        
+
       </div>
-      
+
     </main>
 
     <footer class="mt-auto text-white-50">
@@ -69,6 +71,7 @@
           class="text-white">Lucas Ribeiro</a>.</p>
     </footer>
   </div>
+  <script src="../src/notes.js"></script>
 </body>
 
 </html>
