@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/89867eeffc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/calculadora.css' %}">
+
+    <title>Minha primeira calculadora</title>
+</head>
+<body class="bg-dark">
+    <a class="back ms-4 mt-4" href="/">
+        <i class="fas fa-arrow-left"></i>
+        <span>Voltar</span>
+    </a>
+        <div>
+            <h2 class="text-white">Minha primeira calculadora</h2>
+            <form name="meu_form">
+                <table>
+                    <tr>
+                        <td colspan="4"><input type="text" name="minha_tela" readonly class="tela"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" C " onclick="limpar()" class="botoes"></td>
+                        <td><input type="button" value=" del " onclick="deletar()" class="botoes"></td>
+                        <td><input type="button" value=" - " onclick="inserir(' - ')" class="botoes"></td>
+                        <td><input type="button" value=" + " onclick="inserir(' + ')" class="botoes"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" 1 " onclick="inserir(1)" class="botoes"></td>
+                        <td><input type="button" value=" 2 " onclick="inserir(2)" class="botoes"></td>
+                        <td><input type="button" value=" 3 " onclick="inserir(3)" class="botoes"></td>
+                        <td><input type="button" value=" / " onclick="inserir(' / ')" class="botoes"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" 4 " onclick="inserir(4)" class="botoes"></td>
+                        <td><input type="button" value=" 5 " onclick="inserir(5)" class="botoes"></td>
+                        <td><input type="button" value=" 6 " onclick="inserir(6)" class="botoes"></td>
+                        <td><input type="button" value=" * " onclick="inserir(' * ')" class="botoes"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" 7 " onclick="inserir(7)" class="botoes"></td>
+                        <td><input type="button" value=" 8 " onclick="inserir(8)" class="botoes"></td>
+                        <td><input type="button" value=" 9 " onclick="inserir(9)" class="botoes"></td>
+                        <td><input type="button" value=" = " onclick="total()" class="botoes"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" . " onclick="inserir('.') "class="botoes"></td>
+                        <td><input type="button" value=" 0 " onclick="inserir(0)" class="botoes"></td>
+                    </tr>
+                </table>
+           </form>
+        </div>
+        <script src="{% static 'js/calculadora.js' %}"></script>
+
+</body>
+</html>

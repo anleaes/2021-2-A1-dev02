@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/cover.css' %}">
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+  <title>Sobre</title>
+
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">2021-2-A1-DEV02</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <ul>
+            <li> <a class="nav-link " href="/">Home</a></li>
+            <li><a class="nav-link active" aria-current="page">Sobre</a></li>
+            <li><a class="nav-link" href="/contatos">Contatos</a></li>
+            <li><a class="nav-link " href="/notas">Notas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="px-3">
+      <div class="box-container">
+        <div class="color-background">
+          <header>
+            <div class="imagem-home">
+              <img src="{% static 'img/LogoRitter.jpg' %} " alt="UniRitter">
+            </div>
+            <h2 class="pb-4">Sobre o projeto</h2>
+          </header>
+          <section>
+            <p>Esse é um trabalho para a cadeira de Desenvolvimento para web, com o professor Antônio leaes no segundo
+              semestre de 2021. Esse trabalho visa criar uma plataforma para receber nossos futuros projetos ao longo do
+              semestre.</p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-auto text-white-50">
+      <p class="text-center">Criado por: <a href="https://github.com/HenriqueGasquer" target="_blank"
+          class="text-white">Luis Franco</a> &
+        <a href="https://github.com/ferrarilucas" target="_blank" class="text-white">Lucas Ribeiro</a>.
+      </p>
+    </footer>
+  </div>
+
+  {% block body %}
+
+  {% endblock body %}
+
+</body>
+
+</html>
