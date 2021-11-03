@@ -46,6 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
     'widget_tweaks',
+    'home.apps.HomeConfig',
+    'about.apps.AboutConfig',
+    'contact.apps.ContactConfig',
+    'notes.apps.NotesConfig',
 ]
 
 MIDDLEWARE = [
